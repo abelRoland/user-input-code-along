@@ -1,11 +1,15 @@
-function handler(event) {
-  // read user input from event
+    const displaySubString = (event) => {
+      debugger;
+      // read & process user input
+      const userString = event.target.form.string.value;
 
-  // execute core logic
+      const preStart = event.target.form.begin.value;
+      const start = Number(preStart);
 
-  // render result for user
+      const preEnd = event.target.form.end.value;
+      const end = Number(preEnd);
 
-  // log action for developers
-
-  // for the browser
-}
+      // execute core logic
+      substringLogic(userString, start, end);
+      
+    }

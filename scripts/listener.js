@@ -1,0 +1,1 @@
+document.getElementById('send').addEventListener('click', displaySubString);
